@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
-  Category({Key? key, this.text, this.color, this.onTap}) : super(key: key);
-  String? text;
-  Color? color;
-  VoidCallback? onTap;
+  const Category({Key? key, this.text, this.color, this.onTap})
+      : super(key: key);
+  final String? text;
+  final Color? color;
+  final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
